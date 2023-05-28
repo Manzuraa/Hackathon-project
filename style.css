@@ -40,7 +40,7 @@ header .container .logo p {
 header .container .logo img {
   margin-right: 21px;
 }
-header .menu a {
+/* header .menu a {
   margin-left: 45px;
   font-family: "Inter";
   font-style: normal;
@@ -55,6 +55,24 @@ header .menu a.active {
   text-decoration: underline;
 }
 header .menu a:hover {
+  color: #de1b41;
+} */
+header .menu span {
+  margin-left: 45px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.115em;
+  color: #000000;
+  cursor: pointer;
+}
+header .menu span.active {
+  text-decoration: underline;
+}
+header .menu span:hover {
   color: #de1b41;
 }
 header .hiddenmenu {

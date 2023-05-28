@@ -15,14 +15,21 @@
           <img src="/images/logo.png" alt="Logo" />
           <p>Lybas</p>
         </div>
-        <div class="menu">
-          <a href="index.html" class="active">Home</a>
-          <a href="" onclick="scrollToElement3()">Dresses</a>
+        <nav class="menu">
+          <!-- <a href="index.html" class="active">Home</a>
+          <p href="" onclick="scrollToDresses()">Dresses</p>
           <a href="" onclick="scrollToElement4()">Dressmakers</a>
           <a href="" onclick="scrollToElement()">Abouts Us</a> 
           <a href="" onclick="scrollToElement2()">Contact</a>
+          <a href="login.html">Register</a> -->
+
+          <span  class="active">Home</span>
+          <span  onclick="scrollToDresses()">Dresses</span>
+          <span  onclick="scrollToElement4()">Dressmakers</span>
+          <span  onclick="scrollToElement()">Abouts Us</span> 
+          <span  onclick="scrollToElement2()">Contact</span>
           <a href="login.html">Register</a>
-        </div>
+        </nav>
         <div class="hiddenmenu">
             <img src="images/menu 1.png" alt="">
         </div>
@@ -358,9 +365,9 @@
         let myElement=document.getElementById("contactt");
         myElement.scrollIntoView();
     }
-    function scrollToElement3() {
-        let myElement=document.getElementById("dresss");
-        myElement.scrollIntoView();
+    function scrollToDresses() {
+        let dress=document.getElementById("dresss");
+        dress.scrollIntoView();
     }
     function scrollToElement4() {
         let myElement=document.getElementById("tailorss");
