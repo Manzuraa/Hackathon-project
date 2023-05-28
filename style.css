@@ -1,0 +1,565 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Manrope:wght@400;700&family=Mulish:wght@400;700&family=Open+Sans:wght@400;700&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,900&family=Sen:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Mulish:wght@400;700&family=Open+Sans:wght@400;700&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,900&family=Sen:wght@400;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+a {
+  color: white;
+}
+header {
+  background: #ffffff;
+  width: 100%;
+  padding: 6px 0;
+}
+header .container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+}
+header .container .logo {
+  display: flex;
+  align-items: center;
+  height: 88px;
+}
+header .container .logo p {
+  font-family: "Philosopher";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 72px;
+  text-align: center;
+  letter-spacing: 0.115em;
+  color: #444545;
+}
+header .container .logo img {
+  margin-right: 21px;
+}
+header .menu a {
+  margin-left: 45px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.115em;
+  color: #000000;
+}
+header .menu a.active {
+  text-decoration: underline;
+}
+header .menu a:hover {
+  color: #de1b41;
+}
+header .hiddenmenu {
+  display: none;
+}
+@media (max-width: 600px) {
+  header {
+    padding: 23px 0;
+  }
+  header .container .logo {
+    margin: 0 auto;
+  }
+  header .container {
+    width: 90%;
+    padding-left: 0%;
+  }
+  header .container .menu {
+    display: none;
+  }
+  header .hiddenmenu {
+    display: block;
+  }
+}
+
+section.banner {
+  width: 100%;
+  height: calc(100vh - 98px);
+  display: flex;
+  justify-content: center;
+}
+.banner .content {
+  background-color: #444545;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.banner .content h1 {
+  padding: 0 20px;
+  font-family: "Philosopher";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 90px;
+  color: white;
+  align-self: center;
+}
+.banner p {
+  padding: 0 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  color: #de1b41;
+  position: relative;
+  animation: scroll 0.5s linear infinite alternate;
+}
+@keyframes scroll {
+  from {
+    top: 0;
+  }
+  to {
+    top: 20px;
+  }
+}
+.banner .photo {
+  width: 50%;
+  background-image: url(images/banner2.png);
+  background-size: cover;
+}
+@media (max-width: 600px) {
+  section.banner {
+    display: flex;
+    flex-direction: column;
+  }
+  .banner .content {
+    width: 100%;
+  }
+}
+section.dress,
+section.tailors {
+  width: 100%;
+  background: #fff8f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.dress .title,
+.tailors .title {
+  width: 85%;
+  margin: 0 auto;
+}
+.title h2 {
+  font-family: "Philosopher";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 54px;
+  color: #000000;
+}
+.title h3 {
+  font-family: "Philosopher";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 36px;
+  color: #000000;
+}
+.dress .title h2,
+.tailors .title h2 {
+  margin: 50px 0 30px 0;
+}
+.dress .title h3 {
+  margin-bottom: 30px;
+}
+.dress .container,
+.tailors .container {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+.container .box {
+  width: 22%;
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px;
+}
+.container .box .image {
+  background: #b4a2a2;
+  border-radius: 20px;
+  height: 300px;
+}
+.tailors .container .box .image {
+  height: 234px;
+}
+.container .box .image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.tailors .container .box .image img {
+  object-fit: cover;
+}
+
+.container .box .details h4 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  margin: 20px 0;
+}
+.dress .container .box .details p.price {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #fa8a7a;
+}
+.container .box .details p.location {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: #000000;
+  margin: 20px 0;
+}
+.box .details button {
+  padding: 9px 21px;
+  gap: 10px;
+  width: 121px;
+  height: 33px;
+  background: #de1b41;
+  border-radius: 25px;
+  border: none;
+}
+.container .box .details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+button.show {
+  background: #dcdcdc;
+  width: 229px;
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  margin: 80px 0;
+}
+button.show a {
+  color: #000000;
+}
+button.show:hover {
+  background: #de1b41;
+  color: white;
+}
+section.tailors {
+  background-color: white;
+}
+@media (max-width: 600px) {
+  .dress .container,
+  .tailors .container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .container .box {
+    width: 80%;
+  }
+}
+section.about {
+  width: 100%;
+  background: #fff8f9;
+}
+.about .container {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+.about .container .content,
+.about .container .image {
+  width: 50%;
+}
+.about .container .content p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #232323;
+  width: 541.62px;
+  margin-top: 20px;
+}
+.about .container .image img {
+  width: 100%;
+  border-radius: 25px;
+}
+@media (max-width: 600px) {
+  .about .container {
+    flex-direction: column;
+  }
+  .about .container .content,
+  .about .container .image {
+    width: 80%;
+  }
+}
+section.advantages {
+  width: 100%;
+  padding: 100px 0;
+  background: #fff8f9;
+}
+.advantages .container {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.advantages .container .box {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.advantages .container .box .icon {
+  width: 150px;
+  height: 150px;
+  left: 192px;
+  top: 3332px;
+  background: #de1b41;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.advantages .container .box h2 {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 39px;
+  color: #232323;
+  margin-top: 23px;
+  margin-bottom: 9px;
+}
+.advantages .container .box p {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #232323;
+  width: 337px;
+}
+section.faq {
+  width: 100%;
+  background: #fff8f9;
+}
+.faq .container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 65px 100px;
+  background: #ffffff;
+}
+.faq .container .name h2 {
+  font-family: "Noto Serif";
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 35px;
+  color: #333333;
+  margin-bottom: 100px;
+}
+.faq .container .content {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.faq .container .box {
+  width: 100%;
+  height: 97px;
+  background: #ffffff;
+  border: 1px solid #c3d1e2;
+  margin-bottom: 20px;
+  background-image: url(/images/faq\ icon.png);
+  background-repeat: no-repeat;
+  background-position: 30px 30px;
+  padding-left: 90px;
+  padding-top: 40px;
+}
+.faq .container .box p {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+.dropdown {
+  position: relative;
+}
+.dropdown-content {
+  display: none;
+  height: 182px;
+  background: #ffffff;
+  border: 1px solid #c3d1e2;
+  padding: 12px 16px;
+  position: inherit;
+  z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+section.contactus {
+  width: 100%;
+  background-color: white;
+  padding-top: 67px;
+}
+.contactus .container {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 67px 0 100px 0;
+}
+.contactus .container .form,
+.contactus .container .details {
+  width: 45%;
+}
+.contactus .container .form form {
+  display: flex;
+  flex-direction: column;
+}
+.contactus h2 {
+  font-family: "Noto Serif";
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 35px;
+  color: #333333;
+  margin-left: 230px;
+}
+.contactus .container .form input,
+.contactus .container .form textarea {
+  margin-bottom: 32px;
+  border: 1px solid rgba(222, 27, 65, 1);
+  padding-left: 19px;
+  width: 500px;
+}
+.contactus .container .form input {
+  height: 65px;
+}
+.contactus .container .form textarea {
+  height: 180px;
+  padding-top: 25px;
+  resize: none;
+}
+.contactus .container .form button {
+  width: 181.79px;
+  height: 65.61px;
+  background: #de1b41;
+  border-radius: 12px;
+  border: none;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 16px;
+  color: #ffffff;
+  position: relative;
+  left: 320px;
+}
+.contactus .container .details {
+  display: flex;
+  flex-direction: column;
+}
+.contactus .container .details .address,
+.contactus .container .details .tel,
+.contactus .container .details .email {
+  display: flex;
+  width: 238.67px;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #333333;
+}
+.contactus .container .details .icon {
+  padding-right: 25px;
+}
+.contactus .container .details .line {
+  margin: 36px 0 64px 0;
+}
+@media (max-width: 600px) {
+  .contactus .container {
+    flex-direction: column;
+  }
+  .contactus .container .form,
+.contactus .container .details {
+  width: 80%;
+}
+}
+footer {
+  width: 100%;
+  background: #ffe5ec;
+}
+footer .content {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+footer .content .logo {
+  display: flex;
+  align-items: center;
+}
+footer .content .logo img {
+  margin-right: 25px;
+  height: 67px;
+  width: 85px;
+}
+footer .content .logo p {
+  width: 307px;
+  height: 60.04px;
+  left: 316px;
+  bottom: 150.96px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+footer .content .icons a {
+  margin-left: 47px;
+}
+footer .copyright {
+  background: #d9d9d9;
+}
+footer .copyright p {
+  margin: 0 auto;
+  padding: 25px 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #000000;
+}

@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Manrope:wght@400;700&family=Mulish:wght@400;700&family=Open+Sans:wght@400;700&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,900&family=Sen:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Mulish:wght@400;700&family=Open+Sans:wght@400;700&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,900&family=Sen:wght@400;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+a {
+  color: white;
+}
+header {
+  background: #ffffff;
+  width: 100%;
+  padding: 6px 0;
+}
+header .container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+}
+header .container .logo {
+  display: flex;
+  align-items: center;
+  height: 88px;
+}
+header .container .logo p {
+  font-family: "Philosopher";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 72px;
+  text-align: center;
+  letter-spacing: 0.115em;
+  color: #444545;
+}
+header .container .logo img {
+  margin-right: 21px;
+}
+header .menu a {
+  margin-left: 45px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.115em;
+  color: #000000;
+}
+header .menu a.active {
+  text-decoration: underline;
+}
+header .menu a:hover {
+  color: #de1b41;
+}
+section.main {
+  width: 100%;
+}
+.main .container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.main .container .profile {
+  width: 310px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.main .container .profile .tailorinfo,
+.main .container .profile .tailorcontent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .container .works {
+  width: 485px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .container h2 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+  color: #000000;
+}
+.main .container .tailorinfo p {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+.main .container .tailorcontent p {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 33px;
+  color: #000000;
+}
+.main .container .tailorinfo h2,
+.main .container .tailorinfo p:nth-of-type(2),
+.main .container .tailorcontent h2 {
+  margin: 20px 0;
+}
+.main .container .works h2 {
+  margin-bottom: 70px;
+}
+.main .container .works .workimage {
+  margin-bottom: 90px;
+}
+.main .container .works .review {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 180%;
+  color: #141414;
+}
+footer {
+    width: 100%;
+    background: #ffe5ec;
+  }
+  footer .content {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 60px 0;
+  }
+  footer .content .logo {
+    display: flex;
+    align-items: center;
+  }
+  footer .content .logo img {
+    margin-right: 25px;
+    height: 67px;
+    width: 85px;
+  }
+  footer .content .logo p {
+    width: 307px;
+    height: 60.04px;
+    left: 316px;
+    bottom: 150.96px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+  }
+  footer .content .icons a {
+    margin-left: 47px;
+  }
+  footer .copyright {
+    background: #d9d9d9;
+  }
+  footer .copyright p {
+    margin: 0 auto;
+    padding: 25px 0;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #000000;
+  }

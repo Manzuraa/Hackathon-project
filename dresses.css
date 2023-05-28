@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Manrope:wght@400;700&family=Mulish:wght@400;700&family=Open+Sans:wght@400;700&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,900&family=Sen:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Mulish:wght@400;700&family=Open+Sans:wght@400;700&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,900&family=Sen:wght@400;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+a {
+  color: white;
+}
+header {
+  background: #ffffff;
+  width: 100%;
+  padding: 6px 0;
+}
+header .container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+}
+header .container .logo {
+  display: flex;
+  align-items: center;
+  height: 88px;
+}
+header .container .logo p {
+  font-family: "Philosopher";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 72px;
+  text-align: center;
+  letter-spacing: 0.115em;
+  color: #444545;
+}
+header .container .logo img {
+  margin-right: 21px;
+}
+header .menu a {
+  margin-left: 45px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.115em;
+  color: #000000;
+}
+header .menu a.active {
+  text-decoration: underline;
+}
+header .menu a:hover {
+  color: #de1b41;
+}
+
+.main .container {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+.container .work {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .work .box {
+  width: 22%;
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px;
+}
+.container .box .image {
+  background: #b4a2a2;
+  border-radius: 20px;
+  height: 300px;
+}
+.tailors .container .box .image {
+  height: 234px;
+}
+.container .box .image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.tailors .container .box .image img {
+  object-fit: cover;
+}
+
+.container .box .details h4 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  margin: 20px 0;
+}
+.dress .container .box .details p.price {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #fa8a7a;
+}
+.container .box .details p.location {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: #000000;
+  margin: 20px 0;
+}
+.box .details button {
+  padding: 9px 21px;
+  gap: 10px;
+  width: 121px;
+  height: 33px;
+  background: #de1b41;
+  border-radius: 25px;
+  border: none;
+}
+.container .box .details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+    width: 100%;
+    background: #ffe5ec;
+  }
+  footer .content {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 60px 0;
+  }
+  footer .content .logo {
+    display: flex;
+    align-items: center;
+  }
+  footer .content .logo img {
+    margin-right: 25px;
+    height: 67px;
+    width: 85px;
+  }
+  footer .content .logo p {
+    width: 307px;
+    height: 60.04px;
+    left: 316px;
+    bottom: 150.96px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+  }
+  footer .content .icons a {
+    margin-left: 47px;
+  }
+  footer .copyright {
+    background: #d9d9d9;
+  }
+  footer .copyright p {
+    margin: 0 auto;
+    padding: 25px 0;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #000000;
+  }

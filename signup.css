@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  a {
+    color: white;
+  }
+  section.login {
+    width: 100%;
+  }
+  .container {
+    width: 50%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .logo {
+    height: 70px;
+    width: 85px;
+    margin-bottom: 74px;
+  }
+  .container h2 {
+    width: 100%;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 44px;
+  }
+  .container h2 span {
+    font-family: "Philosopher";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 45px;
+    text-align: center;
+    letter-spacing: 0.115em;
+    color: #444545;
+  }
+  .container form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+  }
+  .container form input {
+    width: 382px;
+    height: 59px;
+    background: #ffffff;
+    border: 1px solid #de1b41;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  .container form button {
+    width: 382px;
+    height: 59px;
+    background: #de1b41;
+    border-radius: 15px;
+    border: none;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #ffffff;
+  }
+  .container .text {
+    display: flex;
+    margin-top: 53px;
+  }
+.container .text {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #000000;
+  }
+.container .text span a {
+    font-weight: 600;
+    color: #de1b41;
+  }
+  
